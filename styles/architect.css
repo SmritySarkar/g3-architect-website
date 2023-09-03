@@ -263,7 +263,7 @@ main{
 }
 
 /* Responsive Media Query for Tablet or Medium Device */
-@media screen and (min-width:576px) and (max-width:960px) {
+@media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 40px;
     }
