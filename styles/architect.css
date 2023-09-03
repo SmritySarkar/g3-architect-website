@@ -18,7 +18,16 @@
     font-weight:600;
     cursor:pointer;
 }
-
+.text-gray{
+    color:#727272;
+    font-size:1rem;
+    font-weight:400;
+}
+.section-title{
+    color:#131313;
+    font-size: 2.8rem;
+    font-weight:700;
+}
 /* Header Section Styles */
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -29,11 +38,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
-    color:#131313;
-    font-size:2.8rem;
-    font-weight:700;
-}
+
 nav > ul{
     display: flex;
 }
@@ -58,11 +63,6 @@ nav li a{
     font-size:4rem;
     font-weight:700;
 }
-.banner-description{
-    color:#727272;
-    font-size:1rem;
-    font-weight:400;
-}
 .banner img{
     margin-top:20px;
     width:100%;
@@ -71,44 +71,42 @@ nav li a{
 /* Main Section Styles */
 main{
     max-width:1440px;
-    margin:0 auto;
+    margin:70px auto;
 }
+
+/* Teams Styles */
 .teams-container{
-    margin-top:90px;
     display:flex;
     gap:50px;
-    align-items:center
+    align-items:center;
 }
 .teams-img-container{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:20px;
+    gap:1.5rem;
 }
 .teams-content-container{
     align-items:center;
+    padding-right:70px;
+    padding-left:70px;
+}
+.teams-title{
+    font-size:2.8rem;
+}
+.team-description{
+    text-align: justify;
 }
 .quick-text{
     color:#727272;
-    font-size:2.8rem;
     font-weight:500;
 }
-.our-text{
-    color:#131313;
-    font-size:2.8rem;
-    font-weight:700;
-}
+
 .feature-text{
     color:#FF900E;
-    font-size: 2.8rem;
     font-weight: 700;
 }
-.teams-description{
-    color:#727272;
-    font-size:1rem;
-    font-weight:400;
-    margin-top:1.8rem;
-    margin-bottom:2rem;
-}
+
+/* Facts Section Styles */
 
 
 /* Responsive Media Queries */
@@ -121,6 +119,18 @@ main{
     nav{
         flex-direction:column;
     }
+    .teams-container{
+        flex-direction: column-reverse;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content-container{
+        align-items:center;
+        padding-right:20px;
+        padding-left:20px;
+    }
+
 }
 
 /* Responsive Media Query for Tablet or Medium Device */
@@ -130,5 +140,11 @@ main{
     }
     nav{
         flex-direction:column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
     }
 }
